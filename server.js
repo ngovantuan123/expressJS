@@ -16,18 +16,18 @@ const database = process.env.DATABASE.replace(
 );
 
 // Connect the database
-mongoose
-  .connect(database, {
-    // useNewUrlParser: true,
-    // useCreateIndex: true,
-    // useFindAndModify: false,
-    maxPoolSize: 10,
-    serverSelectionTimeoutMS: 5000,
-    socketTimeoutMS: 45000,
-  })
-  .then((con) => {
-    console.log("DB connection Successfully!");
-  });
+// mongoose
+//   .connect(database, {
+//     // useNewUrlParser: true,
+//     // useCreateIndex: true,
+//     // useFindAndModify: false,
+//     maxPoolSize: 10,
+//     serverSelectionTimeoutMS: 5000,
+//     socketTimeoutMS: 45000,
+//   })
+//   .then((con) => {
+//     console.log("DB connection Successfully!");
+//   });
 
 // Start the server
 const port = process.env.PORT;

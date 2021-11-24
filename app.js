@@ -31,7 +31,7 @@ app.use(
   })
 );
 // Routes
-app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/service", userRoutes);
 
 // handle undefined Routes
 app.use("*", (req, res, next) => {
